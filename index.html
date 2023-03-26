@@ -12,147 +12,140 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+    <title>Swit 사전질문과제</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 
         * {
-            font-family: 'Gowun Dodum', sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
         }
 
-        .mytitle {
-            background-color: green;
-            color: white;
-
-            height: 250px;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg');
-            background-position: center;
-            background-size: cover;
+        .container {
+            max-width: 1200px;
         }
 
-        .mytitle>button {
-            width: 250px;
-            height: 50px;
-
-            background-color: transparent;
-
-            border: 1px solid white;
-            color: white;
-
-            border-radius: 50px;
-
-            margin-top: 20px;
+        .contents {
+            width: auto;
+            margin-top: 50px;
         }
 
-        .mytitle>button:hover {
-            border: 2px solid white;
+        .title {
+            font-size: 28px;
+            font-weight: 800;
+            vertical-align: middle;
         }
 
-        .mycomment {
-            color: gray;
+        .title img {
+            width: 54px;
         }
 
-        .mycards {
-            width: 1200px;
-            margin: 20px auto 20px auto;
+        .main_text {
+            margin-top: 50px;
         }
 
-        .mypost {
-            width: 500px;
-            margin: 20px auto 20px auto;
-            padding: 20px 20px 20px 20px;
-
-            box-shadow: 0px 0px 3px 0px gray;
+        .accordion-body-title {
+            font-size: 20px;
+            font-weight: bold;
         }
 
-        .mybtn {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-
-            margin-top: 20px;
+        .accordion-body-title img {
+            width: 24px;
+            margin: 10px;
         }
 
-        .mybtn > button {
-            margin-right: 10px;
+        .accordion-body-overview {
+            background-color: #EEEEEE;
+            padding: 20px;
+            font-size: 14px;
+            margin-bottom: 20px;
         }
-        
+
+        .accordion-body-answer-title {
+            font-size: 18px;
+        }
+
+        .accordion-body-answer-body {
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
     </style>
+
 </head>
 
 <body>
-    <div class="mytitle">
-        <h1>내 생애 최고의 영화들</h1>
-        <button>영화 기록하기</button>
-    </div>
-    <div class="mypost">
-        <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">영화URL</label>
-        </div>
-        <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-            <label for="floatingTextarea">코멘트</label>
-        </div>
-        <div class="mybtn">
-            <button type="button" class="btn btn-dark">기록하기</button>
-            <button type="button" class="btn btn-outline-dark">닫기</button>
-        </div>
-    </div>
-    <div class="mycards">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</p>
-                        <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="contents">
+            <div class="title">
+                <p><img src="https://play-lh.googleusercontent.com/FNw7vGUAy5rzZ9pxijqHsONGvHdeZhB6iBwhgB9yWaXmTiO0YGLWgxtmx5P_77mnmRaD=w240-h480-rw"
+                        alt="flow">Swit 사전질문과제</p>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</p>
-                        <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
-                    </div>
-                </div>
+            <div>
+                · 지원 포지션 : PM &nbsp&nbsp&nbsp&nbsp
+                · 지원자 : 신현욱
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</p>
-                        <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
+            <div class="main_text">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <b>[1] 지원자분이 사용해본 업무협업 툴 (1개 이상)의 장점과 단점, 그렇게 생각하는 이유를 자유롭게 서술해주세요</b>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="accordion-body-title">
+                                    <img src="https://play-lh.googleusercontent.com/kmFu6XMfAt0K3G7VdmBMuNXw6qRu1IyhxSTFKLWTyS3l7by4gRa92IaEb76Xuz2J8Q=w240-h480-rw"
+                                        alt="flow">플로우(flow)
+                                </div>
+                                <div class="accordion-body-overview">
+                                    <b>프로젝트 단위의 업무관리, 일정관리 협업 툴</b><br>
+                                    · 사용 시 포지션 : 핀테크 플랫폼 PM<br>
+                                    · 주요 이용 목적 : 프로젝트 현황 관리, 업무 요청 및 자료 전달, 커뮤니케이션
+                                </div>
+                                <div class="accordion-body-answer-title">
+                                    <p><b>장점</b></p>
+                                </div>
+                                <div class="accordion-body-answer-body">
+                                    <p><b>피드 방식의 프로젝트 업무 내용 공유</b></p>
+                                    <li>프로젝트별 현황이나 이슈사항을 시간순으로 공유하여 업무 파악에 용이했습니다. (프로젝트 게시판에 스레드를 남기는 방식)</li>
+                                    <li>연관된 단위 업무에 대한 담당자를 지정하고, '진행 중', '완료' 등 상태를 업데이트할 수 있어 세부적인 진척도 관리에 도움이
+                                    되었습니다.</li><br><br>
+
+                                    <p><b>전자결재, 지출관리 등 부가 기능의 용이성</b></p>
+                                    <li>앱 스토어 내 경비지출관리 앱을 연동할 수 있어, 경비 청구를 하거나 품의를 상신하는 등의 부수적인 업무 진행에 도움이 되었습니다.</li>
+                                </div>
+                                <div class="accordion-body-answer-title">
+                                    <p><b>단점</b></p>
+                                </div>
+                                <div class="accordion-body-answer-body">
+                                    <p><b>전체 프로젝트를 나타내는 '대시보드 페이지'의 낮은 직관성</b></p>
+                                    <li>참여중인 프로젝트가 많아지는 경우 내가 확인해야 할 프로젝트를 바로 찾는데 어려움이 있습니다.</li>
+                                    <li>당시 참여된 프로젝트가 20개 이상인 상황에서, 진행중인 프로젝트에 공유된 자료를 확인하고자 했으나 대시보드에서는 '프로젝트명', '참여자수'
+                                    정도의 간단한 정보만 나타내고 있어 자료를 찾는데 많은 시간을 소요해야 했던 경험이 있습니다.</li>
+                                    <li>프로젝트 즐겨찾기, 카드 UI 컬러 지정과 같은 기능이 있지만 업무 관리 도움에 제한적이라고 생각합니다.</li><br>
+                                    ▶ 여러 프로젝트들이 누적 적재되어 프로젝트간 자료 서칭이나 현황 체크 시 업무 수행자에게 혼동을 야기할 수 있습니다.<br>
+                                    대시보드에서 '프로젝트 상태 표시'나 '사용자 지정 태그' 삽입 등 리스트 관리 기능을 고도화하여 개선될 수 있다고 판단합니다.
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</p>
-                        <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                <b>[2] 스윗 서비스에서 개선하고 싶은 부분을 정의하고, 어떻게 개선하고 싶은지 자유롭게 서술해주세요</b>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                                body. Let's imagine this being filled with some actual content.</div>
+                        </div>
                     </div>
                 </div>
             </div>
